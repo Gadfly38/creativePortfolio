@@ -1,53 +1,56 @@
-import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
+import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 
-const HeroSection=()=>{
-    return (
-    <div className="w-full flex bg-[url('@/assets/hero-bg1.png')] pt-56 pb-8 px-6 bg-cover justify-center flex-col">
-            <div className="flex flex-row justify-between items-center flex-1">
-                <h1 className="uppercase text-[80px] text-white font-semibold">next generation <br/><span className="italic">creative</span> 
-                <span className='text-4xl' style={{
-                    fontSize: "80px",
-                    color: "transparent",
-                    WebkitTextStroke: "2px #e3ff04", // Outline color
-                    background: "linear-gradient(to right, transparent, yellow)", // Gradient starts with transparency
-                    WebkitBackgroundClip: "text", // Clip background to text
-                    backgroundSize: "200% 100%", // Double the width for smooth animation
-                    backgroundRepeat: "no-repeat", // Prevent repeating the background
-                    animation: "fillAnimation 3s linear forwards", // Smooth filling animation
-                }}>agency</span>
-                <style>
-                    {`
-                    @keyframes fillAnimation {
-                        0% {
-                        background-position: 0% 0%;
-                        }
-                        
-                        100% {
-                        background-position: 200% 0%;
-                        }
-                    }
-                    `}
-                </style>
-                </h1>
+const HeroSection = () => {
+  return (
+    <div className="flex relative">
+      <div className="w-full h-[584px] min-h-full flex bg-[url('@/assets/hero-bg1.png')] pt-48 pb-8 px-6 bg-cover flex-col justify-between items-center">
+        <div className="flex flex-col w-[1320px]">
+          <div className="flex flex-row justify-between items-center">
+            <h1 className="uppercase text-[80px] text-white font-semibold">
+              next generation <br />
+              <span className="italic">creative</span>
+              <span
+                className="relative before:content-[attr(data-text)] before:absolute before:w-0 before:overflow-hidden before:animate-pulse-width before:custom-text-stroke
+                        }"
+                style={{
+                  fontSize: "80px",
+                  color: "transparent",
+                  WebkitTextStroke: "2px #e3ff04", // Outline color
+                }}
+                data-text="agency"
+              >
+                agency
+              </span>
+            </h1>
 
-                <div className='relative text-white flex w-4 h-4 group'>
-                <PlayArrowOutlinedIcon className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-white px-6 py-2  transition-colors duration-300" />
-                 
-                {/* Rotating circle animation */}
-                <div className="absolute inset-0 w-full h-full rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute inset-0 border-2 border-dashed border-gray-300 rounded-full animate-spin" style={{ animationDuration: '10s' }} />
+            <div className="relative text-white flex group">
+              <div>
+                <PlayArrowOutlinedIcon />
+                <div className="hover:group ">
+                  <div className=" bg-[url('@/assets/bn1-circle.png')] w-36 h-36 absolute top-[-56px] left-[-66px] animate-textani cursor-pointer group-hover:block"></div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+            <h3 className="text-[22px] text-white">1k + Brands Trust Us</h3>
+          </div>
+        </div>
 
-                    <PlayArrowOutlinedIcon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-white px-6 py-2 rounded-full transition-colors duration-300'/>
-                      {/* <img src='@/assets/bn1-circle.png' alt='rotating element' className='absolute'/> */}
-                </div>
-            </div>
-            <div className='flex'>
-                <h3 className='text-[22px] text-white'>1k + Brands Trust Us</h3>
-            </div>
-        
+        <div className="absolute bottom-0 right-0 h-[180px] w-[617px] bg-[#1f1f1f] rounded-tl-[100px] rounded-bl-[100px] overflow-hidden flex flex-row justify-between">
+          <div className="flex w-1/3 bg-transparent hover:bg-[url('@/assets/bn-expri.png')]"></div>
+          <div className="flex w-1/3 justify-center flex-col pl-4">
+            <p className="text-[20px] text-white">12+</p>
+            <p className="text-[16px] text-[#757575]">years of experience</p>
+          </div>
+          <div className="flex w-1/3 justify-center flex-col pl-4">
+            <p className="text-[20px] text-white">25K+</p>
+            <p className="text-[16px] text-[#757575]">completed projects</p>
+          </div>
+        </div>
+      </div>
     </div>
-    )
-}
+  );
+};
 
 export default HeroSection;
