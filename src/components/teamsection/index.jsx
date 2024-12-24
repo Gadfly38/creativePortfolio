@@ -1,6 +1,10 @@
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
+import team1 from "@/assets/team1.png";
 import team2 from "@/assets/team2.png";
+import team3 from "@/assets/team3.png";
+import team4 from "@/assets/team4.png";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import Card from "../card";
 
 const TeamSection = () => {
   return (
@@ -30,48 +34,16 @@ const TeamSection = () => {
         </div>
         <div className="flex flex-row">
           <div className="flex w-1/4 px-2 pb-7 overflow-hidden">
-            <div
-              className="flex rounded-sm transform perspective-[500px] scale-x-100"
-              style={{
-                transformStyle: "preserve-3d",
-                transform: "rotateX(0deg) rotateY(0deg)", // Custom transform styles
-              }}
-            >
-              <div className="flex flex-col relativer">
-                <div className="flex relative">
-                  <img src={team2} />
-                  <ul className="absolute bottom-0 left-[-100%] transition-left duration-500">
-                    <FacebookOutlinedIcon />
-                  </ul>
-                </div>
-                <div className="flex flex-col text-white">
-                  <p className="text-[16px]">Programmer</p>
-                  <p className="text-[24px]">Leslie Alexander</p>
-                </div>
-              </div>
-            </div>
+            <Card img={team2} />
           </div>
           <div className="flex w-1/4 px-2 pt-7 overflow-hidden">
-            <div
-              className="flex rounded-sm transform perspective-[500px] scale-x-100"
-              style={{
-                transformStyle: "preserve-3d",
-                transform: "rotateX(0deg) rotateY(0deg)", // Custom transform styles
-              }}
-            >
-              <div className="flex flex-col relativer">
-                <div className="flex relative">
-                  <img src={team2} />
-                  <ul className="absolute bottom-0 left-[-100%] transition-left duration-500">
-                    <FacebookOutlinedIcon />
-                  </ul>
-                </div>
-                <div className="flex flex-col text-white">
-                  <p className="text-[16px]">Programmer</p>
-                  <p className="text-[24px]">Leslie Alexander</p>
-                </div>
-              </div>
-            </div>
+            <Card img={team3} />
+          </div>
+          <div className="flex w-1/4 px-2 pb-7 overflow-hidden">
+            <Card img={team4} />
+          </div>
+          <div className="flex w-1/4 px-2 pt-7 overflow-hidden">
+            <Card img={team1} />
           </div>
         </div>
       </div>

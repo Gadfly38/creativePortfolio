@@ -1,10 +1,11 @@
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
 const HeroSection = () => {
   return (
     <div className="flex relative">
       <div className="w-full h-[584px] min-h-full flex bg-[url('@/assets/hero-bg1.png')] pt-48 pb-8 px-6 bg-cover flex-col justify-between items-center">
-        <div className="flex flex-col w-[1320px]">
+        <div className="flex flex-col w-[1394px]">
           <div className="flex flex-row justify-between items-center">
             <h1 className="uppercase text-[80px] text-white font-semibold">
               next generation <br />
@@ -25,9 +26,9 @@ const HeroSection = () => {
 
             <div className="relative text-white flex group">
               <div>
-                <PlayArrowOutlinedIcon />
+                <PlayArrowIcon className="!text-5xl" />
                 <div className="hover:group ">
-                  <div className=" bg-[url('@/assets/bn1-circle.png')] w-36 h-36 absolute top-[-56px] left-[-66px] animate-textani cursor-pointer group-hover:block"></div>
+                  <div className=" bg-[url('@/assets/bn1-circle.png')] w-36 h-36 absolute top-[-50px] left-[-50px] animate-textani cursor-pointer group-hover:block"></div>
                 </div>
               </div>
             </div>
