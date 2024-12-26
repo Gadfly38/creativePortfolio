@@ -3,11 +3,11 @@ import AboutThumb from "@/assets/about-v1thumb.png";
 const AboutSection = () => {
   return (
     <div className="pt-[130px] flex w-full justify-center">
-      <div className="flex flex-row w-full justify-between px-32">
+      <div className="flex flex-col lg:flex-row w-full justify-between px-32">
         <div className="flex w-1/2 pr-3">
           <img src={AboutThumb} />
         </div>
-        <div className="flex w-1/2 flex-col pl-3">
+        <div className="flex w-full lg:w-1/2 flex-col pl-3">
           <div className="flex">
             <div className="flex px-4 py-2 rounded-3xl border-[#454750] border">
               <p className="uppercase text-[16px] text-[#e3ff04]">

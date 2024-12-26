@@ -9,11 +9,11 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Footer = () => {
   return (
-    <div className="flex bg-[url('@/assets/footer.png')] bg-cover h-[560px]">
+    <div className="flex bg-[url('@/assets/footer.png')] bg-cover">
       <div className="flex w-[1320px] mx-auto flex-col">
-        <div className="flex py-20 w-full">
-          <div className="flex my-5 w-full flex-row justify-between">
-            <div className="flex w-3/12 flex-col pl-16 gap-10">
+        <div className="flex py-20 w-full px-24">
+          <div className="my-5 w-full flex-row justify-between flex flex-wrap gap-y-8">
+            <div className="flex w-1/2 lg:w-3/12 flex-col  gap-10">
               <p className="text-white text-[20px] font-semibold">
                 About Us
                 <div className="flex h-[2px] w-[83px] bg-[#e3ff04] mt-3"></div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <SmartDisplayIcon />
               </ul>
             </div>
-            <div className="flex w-2/12 flex-col gap-10">
+            <div className="flex w-1/2 lg:w-3/12 flex-col gap-10">
               <p className="text-white text-[20px] font-semibold">
                 Quick Links
                 <div className="flex h-[2px] w-[83px] bg-[#e3ff04] mt-3"></div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex w-2/12 flex-col gap-10">
+            <div className="flex w-1/2 lg:w-3/12 flex-col gap-10">
               <p className="text-white text-[20px] font-semibold">
                 Services
                 <div className="flex h-[2px] w-[83px] bg-[#e3ff04] mt-3"></div>
@@ -78,7 +78,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex w-3/12 flex-col pl-16 gap-10">
+            <div className="flex w-1/2 lg:w-3/12 flex-col  gap-10">
               <p className="text-white text-[20px] font-semibold">
                 Newsletter
                 <div className="flex h-[2px] w-[83px] bg-[#e3ff04] mt-3"></div>

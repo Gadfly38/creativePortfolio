@@ -20,7 +20,7 @@ const HomeBlogSection = () => {
               <p className="flex text-[55px] text-white">
                 Check Our <span className="italic">Company</span>
               </p>
-              <p className="flex text-[55px] text-white italic font-semibold block">
+              <p className="flex text-[55px] text-white italic font-semibold">
                 Inside Story
               </p>
             </div>
@@ -32,8 +32,8 @@ const HomeBlogSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row w-full">
-          <div className="flex w-1/3 px-3 flex-col">
+        <div className="flex flex-col lg:flex-row w-full items-center gap-6">
+          <div className="flex lg:w-1/3 px-3 flex-col">
             <div className="flex mb-4">
               <img src={mblog1} />
             </div>
@@ -56,7 +56,7 @@ const HomeBlogSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-1/3 px-3 flex-col">
+          <div className="flex lg:w-1/3 px-3 flex-col">
             <div className="flex mb-4">
               <img src={mblog2} />
             </div>
@@ -79,7 +79,7 @@ const HomeBlogSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-1/3 px-3 flex-col">
+          <div className="flex lg:w-1/3 px-3 flex-col">
             <div className="flex mb-4">
               <img src={mblog3} />
             </div>

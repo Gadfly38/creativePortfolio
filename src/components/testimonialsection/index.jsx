@@ -15,10 +15,10 @@ import vector1 from "@/assets/vector01.png";
 const TestimonialSection = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="flex w-[1394px]">
+      <div className="flex w-[800px] lg:w-[1394px]">
         <CarouselProvider
-          naturalSlideWidth={1394}
-          naturalSlideHeight={400}
+          // naturalSlideWidth={1394}
+          // naturalSlideHeight={400}
           totalSlides={2}
           className="!w-full"
           isPlaying={true}
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
         >
           <Slider>
             <Slide index={0}>
-              <div className="flex w-[1187px] mr-[30px] flex-row">
+              <div className="flex w-[800px] h-[600px] mr-[30px] flex-col lg:flex-row items-center">
                 <div className="flex w-full">
                   <img src={tversion} />
                 </div>
@@ -53,7 +53,7 @@ const TestimonialSection = () => {
               </div>{" "}
             </Slide>
             <Slide index={1}>
-              <div className="flex w-[1187px] mr-[30px] flex-row">
+              <div className="flex  w-[800px] h-[600px] mr-[30px] flex-col lg:flex-row items-center">
                 <div className="flex w-full">
                   <img src={tversion} />
                 </div>
@@ -77,7 +77,7 @@ const TestimonialSection = () => {
                     </p>
                   </div>
                 </div>
-              </div>{" "}
+              </div>
             </Slide>
           </Slider>
         </CarouselProvider>
