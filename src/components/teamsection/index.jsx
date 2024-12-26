@@ -32,17 +32,17 @@ const TeamSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="flex w-1/4 px-2 pb-7 overflow-hidden">
+        <div className="grid lg:grid-cols-4 grid-cols-2 flex-col lg:flex-row">
+          <div className="flex  px-2 lg:pb-7 overflow-hidden">
             <Card img={team2} />
           </div>
-          <div className="flex w-1/4 px-2 pt-7 overflow-hidden">
+          <div className="flex  px-2 lg:pt-7 overflow-hidden">
             <Card img={team3} />
           </div>
-          <div className="flex w-1/4 px-2 pb-7 overflow-hidden">
+          <div className="flex px-2 lg:pb-7 overflow-hidden">
             <Card img={team4} />
           </div>
-          <div className="flex w-1/4 px-2 pt-7 overflow-hidden">
+          <div className="flex  px-2 lg:pt-7 overflow-hidden">
             <Card img={team1} />
           </div>
         </div>

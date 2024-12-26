@@ -5,9 +5,9 @@ import studyGrid2 from "@/assets/study-grid2.png";
 const CaseStudySection = () => {
   return (
     <div className="flex pb-[130px]">
-      <div className="flex w-[1320px] mr-auto ml-auto">
-        <div className="flex w-full flex-row">
-          <div className=" flex w-1/2 flex-col px-2">
+      <div className="flex w-[540px] lg:w-[1320px] mr-auto ml-auto">
+        <div className="flex w-full flex-col lg:flex-row">
+          <div className=" flex w-full lg:w-1/2 flex-col px-2">
             <div className="flex border-b flex-col">
               <div className="flex pb-3">
                 <img src={studyGrid1} />
@@ -29,7 +29,7 @@ const CaseStudySection = () => {
               </div>
             </div>
           </div>
-          <div className=" flex w-1/2 flex-col px-2">
+          <div className=" flex w-full lg:w-1/2 flex-col px-2">
             <div className="flex border-b flex-col">
               <div className="flex pb-3">
                 <img src={studyGrid2} />
