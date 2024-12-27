@@ -26,7 +26,7 @@ const TestimonialSection = () => {
   };
   return (
     <div className="flex items-center justify-center">
-      <div className="flex w-full px-11">
+      <div className="flex max-w-[1394px] w-full mx-auto px-11">
         <CarouselProvider
           naturalSlideWidth={getNaturalSlideWidth()}
           naturalSlideHeight={getNaturalSlideHeight()}

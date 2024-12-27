@@ -8,6 +8,13 @@ import Logo from "@/assets/logo.png";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="flex bg-[url('@/assets/footer.png')] bg-cover">
       <div className="flex w-[1320px] mx-auto flex-col">
@@ -104,7 +111,10 @@ const Footer = () => {
           <div className="flex">
             <img src={Logo} />
           </div>
-          <div className="flex w-[58px] h-[58px] rounded-full bg-[#e3ff04] border-white border-2 items-center justify-center cursor-pointer ">
+          <div
+            onClick={scrollToTop}
+            className="flex w-[58px] h-[58px] rounded-full bg-[#e3ff04] border-white border-2 items-center justify-center cursor-pointer "
+          >
             <ArrowUpwardIcon />
           </div>
           <div className="flex">
