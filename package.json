@@ -16,11 +16,13 @@
     "@mui/icons-material": "^6.2.1",
     "@mui/material": "^6.2.1",
     "@syncfusion/ej2-react-navigations": "^28.1.36",
+    "framer-motion": "^11.15.0",
     "lucide-react": "^0.468.0",
     "path": "^0.12.7",
     "pure-react-carousel": "^1.32.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-responsive": "^10.0.0",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
