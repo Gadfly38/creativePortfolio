@@ -1,6 +1,7 @@
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import studyGrid1 from "@/assets/study-grid1.png";
 import studyGrid2 from "@/assets/study-grid2.png";
+import { motion } from "framer-motion";
 
 const CaseStudySection = () => {
   return (
@@ -9,8 +10,13 @@ const CaseStudySection = () => {
         <div className="flex w-full flex-col lg:flex-row">
           <div className=" flex w-full lg:w-1/2 flex-col px-2">
             <div className="flex border-b flex-col">
-              <div className="flex pb-3">
-                <img src={studyGrid1} />
+              <div className="flex pb-3 overflow-hidden">
+                <motion.img
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  src={studyGrid1}
+                />
               </div>
               <div className="flex flex-col w-full">
                 <div className="flex">
@@ -31,8 +37,13 @@ const CaseStudySection = () => {
           </div>
           <div className=" flex w-full lg:w-1/2 flex-col px-2">
             <div className="flex border-b flex-col">
-              <div className="flex pb-3">
-                <img src={studyGrid2} />
+              <div className="flex pb-3 overflow-hidden">
+                <motion.img
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  src={studyGrid2}
+                />
               </div>
               <div className="flex flex-col w-full">
                 <div className="flex">

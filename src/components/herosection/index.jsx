@@ -1,5 +1,6 @@
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,12 @@ const HeroSection = () => {
       <div className="w-full h-[584px] min-h-full flex bg-[url('@/assets/hero-bg1.png')] pt-48 lg:pb-8 px-6 bg-cover flex-col justify-between items-center">
         <div className="flex flex-col max-w-[1394px] w-full mx-auto">
           <div className="flex flex-row justify-between items-center">
-            <h1 className="uppercase text-[60px] lg:text-[80px] text-white font-semibold">
+            <motion.h1
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 2 }}
+              className="uppercase text-[60px] lg:text-[80px] text-white font-semibold "
+            >
               next generation <br />
               <span className="italic">creative</span>
               <span
@@ -21,7 +27,7 @@ const HeroSection = () => {
               >
                 agency
               </span>
-            </h1>
+            </motion.h1>
 
             <div className="relative text-white flex group">
               <div>
