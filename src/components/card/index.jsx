@@ -41,8 +41,9 @@ const StyledWrapper = styled.div`
     --X: 0deg;
     --Y: 0deg;
     --Z: 0deg;
-    --angleX: 15deg;
-    --angleY: 20deg;
+    --angleX: 40deg;
+    --angleY: 30deg;
+    --angleZ: 40deg;
 
     cursor: pointer;
 
